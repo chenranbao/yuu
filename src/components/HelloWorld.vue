@@ -1,6 +1,11 @@
 <template>
   <div class="aa">
+    <span class="iconfont icon-fanhui"></span>
+    <i class="iconfont">&#xe712;</i>
     <input type="file" @change="importf(this)" accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel"/>
+    <div class="aa">
+      
+    </div>
   </div>
 
 </template>
@@ -72,3 +77,8 @@
     }
   }
 </script>
+<style>
+  .aa{
+    width: 100px !important;height: 100px;background-color: red;
+  }
+</style>

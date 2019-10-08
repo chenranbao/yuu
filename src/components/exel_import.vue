@@ -1,6 +1,6 @@
 <template>
   <div class="aa">
-    <input type="file" @change="importf(this)" accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel"/><br />
+    <!--<input type="file" @change="importf(this)" accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel"/><br />-->
     <div style="margin-top: 50px;" @click="export2Excel">导出</div>
   </div>
 
