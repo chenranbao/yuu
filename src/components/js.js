@@ -1,5 +1,9 @@
 
-var tt = '9999'
-module.exports = {
-  tt: tt
+const tt = {
+  ty: '9999'
 }
+//module.exports = {
+//tt: tt,
+//yy: tt
+//}
+export default tt

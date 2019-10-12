@@ -20,11 +20,16 @@ Vue.use(ElementUI)
 Vue.use(VueQuillEditor)
 
 Vue.config.productionTip = false
-
+init()
 /* eslint-disable no-new */
-new Vue({
-  el: '#app',
-  router,
-  components: { App },
-  template: '<App/>'
-})
+function init() {
+  window.application = new Vue({
+    el: '#app',
+    router,
+    components: { App },
+    template: '<App/>'
+  })
+  console.log(window)
+}
+
+

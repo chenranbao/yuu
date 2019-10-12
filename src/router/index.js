@@ -9,6 +9,9 @@ import Canvas from '@/components/canvas'
 import luckyWheel from '@/components/lucky-wheel'
 import lucky from '@/components/luck'
 import print from '@/components/print'
+import test from '@/components/test'
+import importJS from '@/components/import-js'
+import deep from '@/components/deep'
 Vue.use(Router)
 
 export default new Router({
@@ -19,9 +22,24 @@ export default new Router({
       component: HelloWorld
     },
     {
+      path: '/deep',
+      name: 'deep',
+      component: deep
+    },
+    {
+      path: '/importJS',
+      name: 'importJS',
+      component: importJS
+    },
+    {
       path: '/print',
       name: 'print',
       component: print
+    },
+    {
+      path: '/test',
+      name: 'test',
+      component: test
     },
     {
       path: '/lucky',
