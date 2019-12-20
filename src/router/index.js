@@ -12,6 +12,9 @@ import print from '@/components/print'
 import test from '@/components/test'
 import importJS from '@/components/import-js'
 import deep from '@/components/deep'
+import mscollLeft from '@/components/mscollLeft'
+import consanguinityChart from '@/components/consanguinity-chart'
+import interpersonalDiagram from '@/components/interpersonal-diagram'
 Vue.use(Router)
 
 export default new Router({
@@ -25,6 +28,21 @@ export default new Router({
       path: '/deep',
       name: 'deep',
       component: deep
+    },
+    {
+      path: '/mscoll-left',
+      name: 'mscoll-left',
+      component: mscollLeft
+    },
+    {
+      path: '/interpersonal-diagram',
+      name: 'interpersonalDiagram',
+      component: interpersonalDiagram
+    },
+    {
+      path: '/consanguinity-chart',
+      name: 'consanguinityChart',
+      component: consanguinityChart
     },
     {
       path: '/importJS',

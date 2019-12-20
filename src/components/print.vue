@@ -1,5 +1,7 @@
 <template>
   <div>
+    <div :class="[a,b]"></div>
+    <p :title="f">出发点</p>
     <el-button @click="aa" type="primary">打印</el-button>
     <el-table
      id="printContent"
@@ -29,6 +31,9 @@
     export default {
       data() {
         return {
+          a: 'a',
+          b: 'b',
+          f: '打印',
           tableData: [{
             date: '2016-05-02',
             name: '王小虎',
@@ -589,3 +594,15 @@
       }
     }
   </script>
+  <style>
+    .a{
+      width: 50px;
+      height: 50px;
+      background-color: green;
+    }
+    .b{
+      width: 50px;
+      height: 50px;
+      background-color: royalblue;
+    }
+  </style>
