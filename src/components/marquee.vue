@@ -19,7 +19,7 @@
     nowTime:null,//定时器标识
     disArr:[],//每一个内容的宽度
    }
-  }, 
+  },
   mounted:function(){
    var that = this;
    var item = this.$refs.list; 
